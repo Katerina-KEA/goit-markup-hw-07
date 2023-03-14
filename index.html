@@ -20,15 +20,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css"/>
-    <link rel="stylesheet" href="./css/mobile.css">
-    <link rel="stylesheet" href="./css/tablet.css">
-    <link rel="stylesheet" href="./css/desctop.css">
+    <link rel="stylesheet" href="./css/mobile.css"/>
+    <link rel="stylesheet" href="./css/tablet.css"/>
+    <link rel="stylesheet" href="./css/desctop.css"/>
   </head>
   <body>
-    <!-- Header sectionn -->
+     <!-- Header sectionn -->
     <header class="header-section">
-      <div class="container header-container">
-        <!-- <div class="header-list"> -->
+      <div class="container">
+        <div class="header-list">
           <nav class="nav-section">
             <a
               class="logo"
@@ -59,17 +59,17 @@
                 >
               </li>
             </ul>
-          </nav>
+  
             <address class="contact-section">
               <ul class="list-link">
-                <li class="">
+                <li class="link-item">
                   <a
                     href="mailto:info@devstudio.com"
                     class="link-primary"
                     >info@devstudio.com</a
                   >
                 </li>
-                <li>
+                <li class="link-item">
                   <a
                     href="tel:+110001111111"
                     class="link-secondary"
@@ -78,28 +78,30 @@
                 </li>
               </ul>
             </address>
-             
-            <button class="menu-btn-open" type="button" data-menu-open>
+          
+            <button class="js-open-menu" type="button">
               <svg class="menu-icon-open" width="30" height="20">
                 <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
               </svg>
             </button>
-        <!-- </div> -->
-      </div>
+          </nav>
+        </div>
+        </div>
+        
       
-      <div class="mobile-menu is-hidden" data-menu>
-        <div class="container">
+          
+      <!-- MOBILe MENU -->
+      <div class="js-menu-container">
           <div>
-            <!-- class="menu-close-btn" -->
-          <button type="button" class="menu-close-button" data-menu-close>
+          <button type="button" class="js-close-menu">
           <svg class="modal-close-button-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-modal"></use>
           </svg>
         </button>
           <ul class="mobile-menu-list">
-            <li a class="mobile-menu-link" href="./index.html">Studio</a></li>
-            <li a class="mobile-menu-link" href="./portfolio.html">Portfolio</a></li>
-            <li a class="mobile-menu-link" href="">Contacts</a></li>
+            <li><a class="mobile-menu-link" href="./index.html">Studio</a></li>
+            <li><a class="mobile-menu-link" href="./portfolio.html">Portfolio</a></li>
+            <li><a class="mobile-menu-link" href="">Contacts</a></li>
           </ul>
         </div>
         <div>
@@ -139,7 +141,6 @@
                 </ul>
             </div>
         </div>
-    </div>
     </header>
 
     <!-- End of header -->
@@ -215,7 +216,9 @@
           </ul>
         </div>
       </section>
+
       <!-- Mission section -->
+
       <section class="mission-section">
         <div class="container">
           <h2 class="mission-title">What are we doing</h2>
@@ -244,7 +247,9 @@
           </ul>
         </div>
       </section>
+
       <!-- Team section -->
+
       <section class="team-section">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
@@ -414,6 +419,8 @@
         </div>
       </section>
 
+      <!-- CUSTOMERS SECTION -->
+
       <section class="сustomers">
         <div class="container">
           <h2 class="customers-title">Customers</h2>
@@ -458,9 +465,11 @@
         </div>
       </section>
     </main>
+
     <!-- End of main section -->
 
     <!-- Footer section-->
+
     <footer class="footer-logo-section">
       <div class="container flex-container">
         <div class="footer-content-primary">
@@ -529,7 +538,9 @@
       </div>
       </div>
     </footer>
+
     <!-------- modal window ----------->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-button" data-modal-close>
@@ -585,11 +596,15 @@
             <label 
                 for="user_policy" 
                 class="modal-form-check-desc">
+
+
                 <!------- <span class="modal-form-fake-checkbox"> 
                   <svg class="modal-form-fake-checkbox-icon" height="16" width="16">
                     <use href="./images/icons.svg#icon-check"></use>
                   </svg>
                 </span>---------->
+
+
                 I accept the terms and conditions of the&nbsp;<a href="" class="privacy-policy">Privacy Policy</a>
             </label>
             <button type="submit" class="modal-form-submit"> Send </button>
