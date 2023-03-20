@@ -253,7 +253,7 @@ transform: translateX(0);
 .mobile-social-list {
   display: flex;
   max-width: 328px;
-  flex-basis: calc((100%-3*56)/4)
+  flex-basis: calc((100% - 3 * 56)  /4)
 }
 .mobile-social-item {
   width: 40px;
@@ -799,7 +799,7 @@ transform: translateX(0);
 
 /* ============================================================================================================================= */
 /* For Tablet */
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .footer-container {
     max-width: 767px;
     }
@@ -902,7 +902,6 @@ transform: translateX(0);
 @media screen and (min-width: 768px) {
   
 .hero-title {
-  
     width: 496px;
     font-size: 56px;
     line-height: 1.07;
@@ -978,11 +977,9 @@ transform: translateX(0);
   .footer-logo-section {
     max-width: 100%;
   }
-  .footer-logo-section {
-    
-  }
+  
 .flex-container {
-  width: 615px;
+  width: 566px;
   display: flex;
     align-items: baseline;
     justify-content: start;
@@ -1009,6 +1006,21 @@ transform: translateX(0);
   display: flex;
   width: 264px;
 }
+
+.customers-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 72px;
+  column-gap: 16px;
+  width: 559px;
+  margin: 0 auto;
+}
+.customers-item {
+  width: calc((100 - 2 * 24px) / 3);
+  height: 88px;
+  max-width: 168px;
+ }
 }
 /* ==============================================================================================================*/
 /* desktop */
@@ -1140,7 +1152,7 @@ transform: translateX(0);
 }
 .mission-list-item {
   padding-bottom: 120px;
-  flex-basis: calc((100% - 2 * 24px) / 3);
+  width: calc((100% - 2 * 24px) / 3);
   box-sizing: border-box;
   width: 360px;
   height: 300px;
@@ -1159,8 +1171,12 @@ transform: translateX(0);
 
 }
 .customers-list {
+  display: flex;
+  justify-content: center;
   flex-wrap: nowrap;
+  width: 100%;
   gap: 24px;
+  margin: 0 auto;
 }
 .customers-item {
   width: 168px;
@@ -1250,7 +1266,7 @@ transform: translateX(0);
 .modal {
   position: absolute;
   width:95%;
-  height: 584px;
+  /* min-height: 584px; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1285,14 +1301,15 @@ transform: translateX(0);
   transition: background-color 250ms var(--cubic) ;
 }
 .modal-close-button:hover,
-.modal-close-button:hover {
+.modal-close-button:focus {
   background-color: var(--pressed-color);
 }
 .modal-close-button:hover .modal-close-button-icon,
-.modal-close-button:hover .modal-close-button-icon {
+.modal-close-button:focus .modal-close-button-icon {
   fill: var(--primary-white-color) ;
 }
-.modal-close-button-icon {
+.modal-close-button-icon-second {
+  fill: var(--primary-white-color);
   transition: fill 250ms var(--cubic);
 }
 /* ---------------------------------Modal Form--------------------------------------------- */
